@@ -5,8 +5,8 @@ class Film extends Component{
     render() {
         return (
             <div>
-            <p>I am a film</p>
-            <p>I am another film</p>
+                <h4>{this.props.children}</h4>
+                
             </div>
         )
     }
