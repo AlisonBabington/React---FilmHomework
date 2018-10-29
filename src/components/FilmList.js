@@ -3,9 +3,18 @@ import Film from './Film';
 
 class FilmList extends Component {
 
+
     render () {
+
+        const filmNodes = this.props.data.map ( film => { 
+            return <Film key = {film.id} name = {film.name} url = {film.url}/> 
+        })
+
         return (
-            <Film/>
+            <div className = "film-list">
+                {filmNodes}
+            </div>
+
         )
     }
 
