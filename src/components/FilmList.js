@@ -1,9 +1,11 @@
 import React, { Component} from 'react';
+import Film from './Film';
 
 class FilmList extends Component {
+
     render () {
         return (
-            <h1>Hi I am a film list</h1>
+            <Film/>
         )
     }
 
