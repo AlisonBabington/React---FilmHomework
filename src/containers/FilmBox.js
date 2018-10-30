@@ -7,7 +7,7 @@ class FilmBox extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            data: [[
+            data: [
                 {
                   id: 1,
                   name: "Spider-Man: Into the Spider-Verse",
@@ -32,7 +32,7 @@ class FilmBox extends Component {
                   name: "Captain Marvel",
                   url: "https://www.imdb.com/title/tt4154664/?ref_=rlm"
                 }
-              ]]
+              ]
         }
     }
 
@@ -40,7 +40,7 @@ class FilmBox extends Component {
         return (
         <div className = "film-box">
             <h1>Film Releases</h1>
-            <FilmList data = {this.state.data[0]}/>
+            <FilmList data = {this.state.data}/>
             <UpcomingFilm/>
         </div>
         )
